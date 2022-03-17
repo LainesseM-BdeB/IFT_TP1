@@ -1,16 +1,62 @@
+a {
+    color: white;
+}
+
+ol {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
 h1 {
     color: white;
     font-family: "Montserrat Black", serif;
+    padding: 10px;
+    font-size: 45px;
+    text-align: center;
+    margin: 30px 30px 15px 30px;
+}
+
+h2 {
+    color: white;
+    font-family: "Montserrat Light", serif;
+    font-size: xxx-large;
 }
 
 h3 {
     color: white;
     font-family: Montserrat, serif;
+    text-align: center;
 }
 
-.headTitle {
-    align-items: center;
-    padding: 30px;
+img {
+    max-width: 100%;
+    max-height: 150px;
+    margin: 0 20px 20px 20px;
+}
+
+iframe {
+    border: 0;
+    left: 0;
+    top:0;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.top {
+    order: 1000;
+    margin: 0 0 10px 0;
+}
+
+.navBox {
+    flex-flow: row;
+    margin: 20px 20px 20px 20px;
+    padding: 15px;
+    justify-content: center;
 }
 
 .box {
@@ -19,8 +65,21 @@ h3 {
     border: 5px solid white;
     display: flex;
     flex-flow: column nowrap;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     box-shadow: 10px 10px black, 10px 10px 0 5px white;
+    width: 1000px;
+}
+
+.player {
+    display: block;
+    padding: 0;
+}
+
+.playerBox {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
 }
 
 div {
@@ -29,40 +88,79 @@ div {
     align-items: center;
 }
 
+.pokemonBox {
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 20px 25px 30px 20px;
+    flex-flow: row wrap;
+    padding: 15px;
+    box-shadow: 5px 5px black, 5px 5px 0 3px white;
+    min-width: 500px;
+    max-width: 900px;
+    justify-content: center;
+}
+
+.pokemonName {
+    order: 1;
+}
+
+.pokemonImg {
+    order: 2;
+}
+
+.pokemonDesc {
+    order: 3;
+    padding: 0 50px 20px 50px;
+}
+
+.dark {
+    padding-top: 20px;
+    text-align: center;
+}
+
 .firstHead {
     flex: 1;
     order: 1;
 }
 
 .secondHead {
+    margin-top: -50px;
+    font-size: 25px;
     flex: 2;
     order: 2;
+}
+
+.nav {
+    margin: 10px 0px -40px 0px;
+}
+
+.navItem {
+    margin: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.navPokemon {
+    padding: 10px;
+    font-size: 22px;
+}
+
+#info {
+    margin-top: 40px;
+    font-size: 20px;
 }
 
 body {
     background-color: rgb(220, 0, 0);
     font-family: "Montserrat Light", serif;
     color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
-a {
-    color: white;
-}
-
-img {
-    max-width: 100%;
-    max-height: 150px;
-    margin: 20px;
-}
-
-.nav {
-    margin-bottom: -20px;
-}
-
-li {
-    margin: 5px;
-}
-
-ul {
-    list-style-type: none;
+html, body {
+    min-width: 100%;
+    margin: 0px auto;
 }
